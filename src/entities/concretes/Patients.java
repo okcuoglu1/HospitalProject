@@ -8,7 +8,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Patient extends Users {
+public class Patients extends Users {
 
     private String tcNo;
     private LocalDate birthDate;
