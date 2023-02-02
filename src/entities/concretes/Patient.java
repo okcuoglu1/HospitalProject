@@ -14,7 +14,7 @@ public class Patient extends Users {
     private LocalDate birthDate;
     private Gender gender;
 
-    private List<Priority> priorities = new ArrayList<>();
+    private List<Priorities> priorities = new ArrayList<>();
 
 
 
