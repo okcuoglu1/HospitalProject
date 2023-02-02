@@ -3,7 +3,7 @@ package entities.concretes;
 public class Complaints {
 
     private int id;
-    private String complaint;
+    private String complaint; //Bas agrisi, kusma, bulanti.....
 
     public Complaints() {
     }
