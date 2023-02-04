@@ -1,22 +1,20 @@
 package entities.concretes;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class Priorities {
+public class LastStatuses {
 
     private int id;
-    private String priority; //Acil,poliklinik,Rutin
-    private List<Patients> patientsList = new ArrayList<>();
+    private String lastStatus;
+    private List<Patients> patientsList;
 
-
-    public Priorities() {
+    public LastStatuses() {
     }
 
-    public Priorities(int id, String priority,List<Patients> patients) {
+    public LastStatuses(int id, String lastStatus,List<Patients> patientsList) {
         this.id = id;
-        this.priority = priority;
-        this.patientsList=patients;
+        this.lastStatus = lastStatus;
+        this.patientsList = patientsList;
     }
 
     public int getId() {
@@ -27,12 +25,12 @@ public class Priorities {
         this.id = id;
     }
 
-    public String getPriority() {
-        return priority;
+    public String getLastStatus() {
+        return lastStatus;
     }
 
-    public void setPriority(String priority) {
-        this.priority = priority;
+    public void setLastStatus(String lastStatus) {
+        this.lastStatus = lastStatus;
     }
 
     public List<Patients> getPatientsList() {
@@ -43,11 +41,12 @@ public class Priorities {
         this.patientsList = patientsList;
     }
 
+
     @Override
     public String toString() {
         return
                 "id=" + id +
-                        ", priority='" + priority + '\'' +
+                        ", lastStatus='" + lastStatus + '\'' +
                         ", patientsList=" + patientsList ;
     }
 }
